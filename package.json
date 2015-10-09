@@ -21,7 +21,7 @@
     "karma-story-reporter": "~0.2.2"
   },
   "dependencies": {
-    "handlebars": "^4.0.3"
+    "handlebars": "^4.0.3",
     "i18next": "^1.10.4"
   }
 }
