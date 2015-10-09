@@ -18,5 +18,8 @@
     "karma-jasmine": "~0.1.5",
     "karma-script-launcher": "~0.1.0",
     "karma-story-reporter": "~0.2.2"
+  },
+  "dependencies": {
+    "i18next": "^1.10.4"
   }
 }
