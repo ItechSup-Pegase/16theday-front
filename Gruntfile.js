@@ -5,6 +5,7 @@
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-karma');
 
     var jsSrc = ['src/**/*.js'];
@@ -15,6 +16,11 @@
     // Configuration de Grunt
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
+      connect: {
+        server: {
+          port: 8000
+        }
+      },
       jshint: {
         files: allFiles,
       },
@@ -65,5 +71,5 @@
       }
     });
 
-    grunt.registerTask('default', ['jshint','concat','uglify', 'karma', 'less', 'watch']);
+    grunt.registerTask('default', ['jshint','concat','uglify', 'karma', 'less', 'connect', 'watch']);
   };

@@ -1,17 +1,4 @@
-function toggle(elemID) {
-
-    var elem = document.getElementById(elemID);
-
-    
-
-    if (elem.style.display == 'block') { 
-
-        elem.style.display = 'nohsrfe';     
-
-    } else {
-
-        elem.style.display = '21';     
-
-    }      
-
-} 
+var source = document.querySelector("#template").innerHTML ; 
+var template = Handlebars.compile(source);  
+var html = template(data);
+document.querySelector("body").innerHTML = html;

@@ -1,0 +1,17 @@
+    <!DOCTYPE html>
+    <html>
+      <head>  
+        <title>Titre de la page</title>
+        <meta http-equiv="Content-Type" content="text/html" />
+        <meta charset="UTF-8" />
+      </head>
+      <body>
+        <div id="template" type="text/x-handlebars-template">
+          {{#each this}}
+            <h1>{{firstName}} {{lastName}}</h1>Blog: {{blogURL}}
+          {{/each}}
+        </div>
+      </body>
+      <script type="text/javascript" src="./node_modules/handlebars/dist/handlebars.js"></script>
+      <script type="text/javascript" src="./build/js/built.js"></script>
+    </html>
