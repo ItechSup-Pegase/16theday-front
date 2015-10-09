@@ -18,7 +18,7 @@
       pkg: grunt.file.readJSON('package.json'),
       connect: {
         server: {
-          port: 8000
+          port: 8888
         }
       },
       jshint: {
